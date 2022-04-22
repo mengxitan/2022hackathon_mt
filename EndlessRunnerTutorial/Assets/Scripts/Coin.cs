@@ -14,9 +14,9 @@ public class Coin : MonoBehaviour {
         }
 
         // Check that the object we collided with is the player
-        if (other.gameObject.name != "Player") {
-            return;
-        }
+        //if (other.gameObject.name != "Player") {
+        //    return;
+        //}
 
         // Add to the player's score
         GameManager.inst.IncrementScore();

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour {
 
-    public float speed = 5;
+    public float speed = 10;
     public Rigidbody rb;
 
     float horizontalInput;

@@ -43,6 +43,7 @@ public class GroundTile : MonoBehaviour {
             Random.Range(collider.bounds.min.y, collider.bounds.max.y),
             Random.Range(collider.bounds.min.z, collider.bounds.max.z)
             );
+        
         if (point != collider.ClosestPoint(point)) {
             point = GetRandomPointInCollider(collider);
         }
