@@ -9,6 +9,8 @@ public class ShipMovement : MonoBehaviour {
     float horizontalInput;
     public float horitzontalMultiplier = 2;
 
+    public float speedIncreasePerPoint = 0.1f;
+
     private void FixedUpdate()
     {
         Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime; 

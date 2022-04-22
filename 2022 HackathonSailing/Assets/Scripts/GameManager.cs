@@ -12,10 +12,14 @@ public class GameManager : MonoBehaviour
 
     public Text scoreText;
 
+    public ShipMovement shipMovement;
+
     public void IncrementScore()
     {
         score++;
         scoreText.text = "SCORE:" + score;
+        //Increase the player's speed based on points
+        shipMovement.speed += shipMovement.speedIncreasePerPoint;
     }
 
     private void Awake()
